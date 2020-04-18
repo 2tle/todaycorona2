@@ -1,0 +1,183 @@
+<html>
+    <head>
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158970884-1"></script>
+	    <script>
+  		    window.dataLayer = window.dataLayer || [];
+  		    function gtag(){dataLayer.push(arguments);}
+  		    gtag('js', new Date());
+    
+ 	 	    gtag('config', 'UA-158970884-1');
+	    </script>
+	    <meta name="naver-site-verification" content="b95130181d717fd32975f459c9ba5e11a9f3d0ea"/>
+	    <script data-ad-client="ca-pub-4890007597542726" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	    <meta name="title" content="투데이 코로나">
+	    <meta name="keywords" content="우한폐렴,코로나,코로나19,실시간,정보,투데이,코로나">
+	    <meta name="description" content="코로나19의 실시간 정보를 보여줍니다">
+        <meta charset="utf-8">
+	    <link rel="canonical" href="https://todaycorona.site" />
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0">
+        <meta property="og:url" content="https://todaycorona.site">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="실시간 코로나">
+        <meta property="og:description" content="실시간 코로나 정보 todaycorona.site">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/callout.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>투데이 코로나</title>
+	<style>
+	</style>
+    </head>
+    <body>
+        <div class="root">
+            <div class="wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="">
+                    <a class="navbar-brand" href="#">TodayCorona</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="https://todaycorona.site">홈<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="https://todaycorona.site/locaView">국내 지역별 감염자</a>
+                            <a class="nav-item nav-link" href="https://todaycorona.site/worldView">해외 국가별 감염자</a>
+                            <a class="nav-item nav-link" href="https://todaycorona.site/scjList">신천지교회 위치</a>
+                            <a class="nav-item nav-link" href="http://www.mohw.go.kr/react/popup_200128.html">선별진료소 보기</a>
+			                <a class="nav-link disabled" href="https://todaycorona.site/covnews" tabindex="-1" aria-disabled="true">실시간뉴스</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <div class="page-title">
+                        투데이 코로나 - 실시간 코로나 현황
+                    </div>
+		            <div class="page-des"style="text-align:center;">보다 자세한 정보는 상단 메뉴에서 확인 가능합니다.</div>
+		     
+                    <div class="wrap">      
+                        <div class="domestic-data">
+                            <div class="data-title">
+                                국내 현황
+                            </div>
+                            <div>
+                                <div class="bd-callout bd-callout-warning wid-25">
+                                    <div class="bd-title1">
+                                        감염자 수 <span class="bd-data" id="int_g"></span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="bd-callout bd-callout-danger wid-25">
+                                    <div class="bd-title1">
+                                        사망자 수 <span class="bd-data" id="int_die"></span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="bd-callout bd-callout-secondary wid-25">
+                                    <div class="bd-title1">
+                                        검사 진행 <span class="bd-data" id="int_d"></span>
+                                    </div>
+                                </div>
+                                <div class="bd-callout bd-callout-info wid-25">
+                                    <div class="bd-title1">
+                                        완치자 수 <span class="bd-data" id="int_c"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="foreign-data">
+                            <div class="data-title">
+                                국외 현황
+                            </div>
+                            <div>
+                                <div class="bd-callout bd-callout-warning wid-25">
+                                    <div class="bd-title1">
+                                        감염자 수 <span class="bd-data" id="ext_gam"></span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="bd-callout bd-callout-danger wid-25">
+                                    <div class="bd-title1">
+                                        사망자 수 <span class="bd-data" id="ext_die"></span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="bd-callout bd-callout-secondary wid-25">
+                                    <div class="bd-title1">
+                                        중국 감염자 <span class="bd-data" id="chi_gam"></span>
+                                    </div>
+                                </div>
+                                <div class="bd-callout bd-callout-info wid-25">
+                                    <div class="bd-title1">
+                                        중국 사망자 <span class="bd-data" id="chi_die"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+		   
+                </div>
+                <div class="container">
+                    <div class="chart">
+			<div>
+                            <div class="data-title">
+                                국내 그래프
+                            </div>
+                            <div style="width:100%" class="bd-callout bd-callout-warning">
+                                <canvas id="chart"></canvas>
+                            </div>
+                            <div style="width:100%" class="bd-callout bd-callout-danger">
+                                <canvas id="chart1"></canvas>
+                            </div>
+                            <div style="width:100%" class="bd-callout bd-callout-info">
+                                <canvas id="chart2"></canvas>
+                            </div>
+			</div>
+                    </div>
+                    <div class="cpy">
+                        <p>
+                            위 자료는 질병관리본부 측에서 제공한 데이터를 기반으로 제작하였습니다.<br>
+                            자료가 뜨지 않는 현상은 질병관리본부 코로나19 관련 페이지가 로드되지 않은 것이므로, 새로고침 하여 주시기 바랍니다.<br>
+                            신천지교회 목록 중 누락 항목이 있다면<strong>iam@hyunjun.xyz</strong>로 보내주세요.<br>
+	
+                        </p>
+                        <p>
+                            Copyright 2020. hyunjun all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <script src="/js/request.js"></script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/chart.js"></script>
+        <script src="/js/chartRequest.js"></script>
+        <script>
+            window.onload = function() {
+                getChart();
+                getCovData();
+            }
+            function goDoc(){
+                window.open("http://www.mohw.go.kr/react/popup_200128.html", "COVID-19 선별진료소", "width=1000, height=700, left=100, top=50");
+            }
+            function goSaiBiList(){
+                window.open("/scjList", "COVID-19 선별진료소", "width=1000, height=700, left=100, top=50");
+            }
+            function goLoc() {
+                window.open("/locaView", "지역별 뷰", "width=1000, height=700, left=100, top=50");
+            }
+        </script>
+	    <div class="text-center loading" id="lod">
+	        <div class="spinner-border text-dark" role="status">
+  		        <span class="sr-only">Loading...</span>
+	        </div>
+	    </div>
+    </body>
+</html>

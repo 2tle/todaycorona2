@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0">
+        <meta property="og:url" content="https://cov.hyunjun.xyz">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="실시간 코로나">
+        <meta property="og:description" content="실시간 코로나 정보 cov.hyunjun.xyz">
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/callout.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>신천지 목록 - 실시간 코로나 현황</title>
+    </head>
+    <body>
+        <div class="root">
+            <div class="wrapper">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="">
+                    <a class="navbar-brand" href="https://todaycorona.site">TodayCorona</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup
+" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="https://todaycorona.site">홈<span class="sr-only">
+(current)</span></a>
+                            <a class="nav-item nav-link" href="https://todaycorona.site/locaView">국내 지역별 감염자</a>
+                            <a class="nav-item nav-link" href="https://todaycorona.site/worldView">해외 국가별 감염자</a>
+                            <a class="nav-item nav-link" href="https://todaycorona.site/scjList">신천지교회 위치</a>
+                            <a class="nav-item nav-link" href="http://www.mohw.go.kr/react/popup_200128.html">선별진료
+ 보기</a>
+                            <a class="nav-link disabled" href="https://todaycorona.site/covnews" tabindex="-1" aria-disabled="true">실시간뉴스</a>
+	
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="page-title">
+                        투데이 코로나 신천지 목록
+                    </div>
+                    <div class="wrap">
+                        <div class="form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="ex) 경기도 수원시 일 경우 수원 이라고 검색해 주세요." aria-label="Username" aria-describedby="basic-addon1" id="address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="saibiSearch();">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="scjList" id="scj"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="cpy">
+                        <p>
+                            위 자료는 질병관리본부 측에서 제공한 데이터를 기반으로 제작하였습니다.<br>
+                            신천지교회 목록 중 누락 항목이 있다면<strong>iam@hyunjun.xyz</strong>로 보내주세요.
+                        </p>
+                        <p>
+                            Copyright 2020. hyunjun all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <script src="/js/request.js"></script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script>
+            window.onload = function() {
+                getCovData();
+            }
+            function goDoc(){
+                window.open("http://www.mohw.go.kr/react/popup_200128.html", "COVID-19 선별진료소", "width=1000, height=700, left=100, top=50");
+            }
+            function goSaiBiList(){
+                window.open("/scjList", "COVID-19 선별진료소", "width=1000, height=700, left=100, top=50");
+            }
+        </script>
+    </body>
+</html>

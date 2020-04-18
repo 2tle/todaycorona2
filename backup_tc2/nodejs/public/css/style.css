@@ -1,0 +1,42 @@
+.bd-title1 {
+    font-weight : bold;
+}
+
+.page-title {
+    font-weight:bold;
+    text-align:center;
+    font-size : 2em;
+    padding : 1em 0 1em 0;
+}
+
+.data-title {
+    font-weight : bold;
+}
+
+.bd-data {
+    font-weight : 400;
+}
+
+.wrap {
+    margin : 1em;
+}
+
+.cpy {
+    font-size : 0.8rem;
+    text-align:center;
+    color : darkgray;
+    padding :1em;
+    
+}
+.text-center {
+	width:100%;
+	position:relative;
+	z-index : 1;
+	height : 100%;
+}
+.spinner-border {
+	display:block;
+	position: fixed;
+	top: calc(50% - (58px /2));
+	right : calc(50% - (58px/2));
+}
