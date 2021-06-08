@@ -8,8 +8,8 @@ var urlencode = require('urlencode');
 var mysql = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : 'ieelte',
-  password : '@@Ieelte1214',
+  user     : '',
+  password : '',
   database : 'cov_db'
 });
 connection.connect();
